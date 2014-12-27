@@ -1,0 +1,32 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@include font-face("Joffrey", font-files("/fonts/In\\ your\\ face\\,\\ joffrey\\!.ttf"));
+
+body {
+	background-image: url("/imgs/snack-pack-bkg.jpeg");
+	font-family: "Joffrey";
+}
+
+.page-header {
+	@include single-text-shadow;
+	text-align: center;
+	color: #FFCB01;
+
+	h1 {
+		font-size: 3.5em;
+	}
+
+	h3 {
+		font-size: 2.5em;
+	}
+}
+
+.jumbotron {
+	background-color: rgba(238, 238, 238, 0.65);
+}
