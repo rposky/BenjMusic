@@ -16,27 +16,51 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="page-header">
-        <h1>Benj Music</h1>
-        <h3>Snack Pack - Volume 1</h3>
+    <div class="titles-container">
+      <div class="titles">
+        <h1>Benj</h1>
+        <br/>
+        <h3>Snack Pack</h3>
+        <br/>
+        <h4>Volume 1</h4>
       </div>
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="jumbotron">
-            <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177936621&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="footer">
+      <a href="http://www.facebook.com/jordanthebenj" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+      <a href="http://www.twitter.com/jordanthebenj" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+      <a href="http://instagram.com/jordanthebenj" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $.stratus({
+          align: 'top',
+          animate: 'fade',
+          auto_play: true,
+          buying: false,
+          download: true,
+          links: 'https://soundcloud.com/jordanthebenj/sets/snack-pack-volume-one/s-2KJxC',
+          random: false,
+          stats: true,
+          user: true,
+          volume: 75
+        });
+
+        $('body').click(function(event) {
+            if ($(event.target).is('i')) {
+              return true;
+            }
+            window.open('https://www.mediafire.com/folder/g1gti6mylc71j/SNACK_PACK', '_blank').focus();
+        });
+      });
+    </script>
   </body>
 </html>

@@ -71,28 +71,130 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Joffrey";
   src: url(/fonts/In\ your\ face\,\ joffrey\!.ttf) format('truetype');
 }
-/* line 11, ../sass/screen.scss */
-body {
-  background-image: url("/imgs/snack-pack-bkg.jpeg");
-  font-family: "Joffrey";
+/* line 27, ../sass/screen.scss */
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-/* line 16, ../sass/screen.scss */
-.page-header {
+/* line 32, ../sass/screen.scss */
+body {
+  font-family: "Joffrey";
+  background-image: url("/imgs/snack-pack-bkg.png");
+  margin-bottom: 48px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  /* line 40, ../sass/screen.scss */
+  body {
+    background-size: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 46, ../sass/screen.scss */
+  body {
+    background-size: 75%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 52, ../sass/screen.scss */
+  body {
+    background-size: 50%;
+  }
+}
+/* line 57, ../sass/screen.scss */
+.titles-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 63, ../sass/screen.scss */
+.titles {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   text-shadow: 0px 0px 1px #aaa;
   text-align: center;
-  color: #FFCB01;
+  color: black;
+  background-color: rgba(90, 197, 241, 0.6);
 }
-/* line 21, ../sass/screen.scss */
-.page-header h1 {
-  font-size: 3.5em;
+/* line 70, ../sass/screen.scss */
+.titles h1, .titles h3, .titles h4 {
+  display: inline-block;
 }
-/* line 25, ../sass/screen.scss */
-.page-header h3 {
-  font-size: 2.5em;
+/* line 74, ../sass/screen.scss */
+.titles h1, .titles h3 {
+  font-weight: bold;
+}
+/* line 78, ../sass/screen.scss */
+.titles h4 {
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  /* line 83, ../sass/screen.scss */
+  .titles h1 {
+    font-size: 5em;
+  }
+  /* line 87, ../sass/screen.scss */
+  .titles h3 {
+    font-size: 3.5em;
+  }
+  /* line 91, ../sass/screen.scss */
+  .titles h4 {
+    font-size: 3.0em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 97, ../sass/screen.scss */
+  .titles h1 {
+    font-size: 7.5em;
+  }
+  /* line 101, ../sass/screen.scss */
+  .titles h3 {
+    font-size: 5em;
+  }
+  /* line 105, ../sass/screen.scss */
+  .titles h4 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 111, ../sass/screen.scss */
+  .titles h1 {
+    font-size: 10em;
+  }
+  /* line 115, ../sass/screen.scss */
+  .titles h3 {
+    font-size: 7.5em;
+  }
+  /* line 119, ../sass/screen.scss */
+  .titles h4 {
+    font-size: 6.5em;
+  }
 }
 
-/* line 30, ../sass/screen.scss */
-.jumbotron {
-  background-color: rgba(238, 238, 238, 0.65);
+/* line 125, ../sass/screen.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  text-align: center;
+}
+/* line 133, ../sass/screen.scss */
+.footer .fb-follow, .footer .twitter-follow-button {
+  position: relative;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+/* line 137, ../sass/screen.scss */
+.footer i {
+  color: black;
 }
